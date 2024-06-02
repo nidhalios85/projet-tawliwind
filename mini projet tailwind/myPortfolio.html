@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        header{
+            position: fixed;
+            width: 100%;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+     <!-- Header Section -->
+     <header class="bg-blue-500 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="personalphoto.png" alt="Your Name" class="w-12 h-12 rounded-full">
+                <h1 class="text-2xl">Nidhal Ghalleb</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:underline">Home</a></li>
+                    <li><a href="#projects" class="hover:underline">Projects</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center h-96" style="background-image: url('bgImage.jpg');">
+        <div class="container mx-auto h-full flex items-center justify-center">
+            <h2 class="text-4xl md:text-6xl text-white text-center">Welcome to My Portfolio</h2>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h3 class="text-3xl mb-8 text-center">My Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded shadow-md">
+                    <div class="flex items-center space-x-4">
+                        <img src="htmlCss.png" alt="Skill 1" class="w-12 h-12 rounded-full">
+                        <h4 class="text-2xl mb-4">HTML & CSS</h4>
+                    </div>
+                    <p>During my course with GoMyCode I was able to upgrade my skills decently in the HTML language and the CSS styling language.</p>
+                </div>
+                <div class="p-6 bg-white rounded shadow-md">
+                    <div class="flex items-center space-x-4">
+                        <img src="bootstrapTailwind.webp" alt="Skill 2" class="w-12 h-12 rounded-full">
+                        <h4 class="text-2xl mb-4">CSS frameworks: Bootstrap and Tailwind</h4>
+                    </div>
+                    <p>Recently, I added a new step in website styling by learning Bootstrap and Tailwind essentials.</p>
+                </div>
+                <div class="p-6 bg-white rounded shadow-md">
+                    <div class="flex items-center space-x-4">
+                        <h4 class="text-2xl mb-4">Not Just Web Developpement</h4>
+                    </div>
+                    <p>In addition to these computing skills, I have achieved other things in my career, like mastering the English language at the "ISLT" institute,
+                        being able to manage various jobs like running a coffee shop called "Café Dose", in addition to a video game center at AFH - Nabeul called "JOKER".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12 bg-gray-200">
+            <div class="container mx-auto">
+                <h3 class="text-3xl mb-8 text-left">Projects</h3>
+                <h4 class="text-3xl mb-8 text-left">In this section I will mention some of the web projects that I recently have been working on.</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <div class="p-6 bg-white rounded shadow-md">
+                        <img src="vesuvio.png" alt="Project 1" class="w-full h-48 object-cover mb-4 rounded">
+                        <h4 class="text-2xl mb-4 text-left">Vesuvio's: Restaurant Website</h4>
+                        <p>With the recently learned skills I was able to create this simulation of a restaurant website with the name being "Vesuvio".</p>
+                    </div>
+                    <div class="p-6 bg-white rounded shadow-md">
+                        <img src="store.png" alt="Project 2" class="w-full h-48 object-cover mb-4 rounded">
+                        <h4 class="text-2xl mb-4 text-left">Nidhal's Watch Store</h4>
+                        <p>With the idea being similar to "Vesuvio's", I created this beautiful, clean and smoothly responsive site for selling watches online, calling it "Nidhal's".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-12">
+        <div class="container mx-auto">
+            <h3 class="text-3xl mb-8 text-center">Contact Me</h3>
+            <div class="flex justify-center space-x-8 mb-8">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-envelope text-gray-700"></i>
+                    <span>ngconsultingnido@gmail.com</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-phone text-gray-700"></i>
+                    <span>+216 22 553 021</span>
+                </div>
+            </div>
+            <form class="max-w-lg mx-auto bg-white p-6 rounded shadow-md space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full p-2 border border-gray-300 rounded"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:underline"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:underline"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:underline"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:underline"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2024 Nidhal Ghalleb. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
